@@ -53,5 +53,5 @@ const { remote } = require('webdriverio');
     const save = await browser.$('button[name="submit-shipping"]')
     await save.click()
 
-    // await browser.deleteSession();
+    await browser.deleteSession();
 })().catch((e) => console.error(e))
